@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>SpaceX</title>
+		<link rel="stylesheet" type="text/css" href="challenge1.css">
+		<script src="https://code.highcharts.com/highcharts.js"></script>
+	</head>
+	<body>
+		<header>
+			<img src="spacexlogo.png">
+			<div class="nav flex-container">
+				<div class="flex-item box2 flex-hidden"><h2><a href="#">FALCON 9<a></h2></div>
+        		<div class="flex-item box3 flex-hidden"><h2><a href="#">FALCON HEAVY</a></h2></div>
+        		<div class="flex-item box4 flex-hidden"><h2><a href="#">DRAGON</a></h2></div>
+        		<div class="flex-item box5 flex-hidden"><h2><a href="#">UPDATES</a></h2></div>
+			</div>
+		</header>	
+
+		<h1>Uitgave aan Falcon 9</h1>
+		<div class='container1 ' >
+			<div class="flex-container ">
+				<p>2013</p>
+				<div class="container flex-item">
+				  <div class="skills drie">$39.24</div>
+				</div>
+			</div>
+			<div class="flex-container">
+				<p>2014</p>
+				<div class="container flex-item">
+				  <div class="skills vier">$149.56</div>
+				</div>
+			</div>
+			<div class="flex-container">
+				<p>2015</p>
+				<div class="container flex-item">
+				  <div class="skills vijf">$219.31</div>
+				</div>
+			</div>
+			<div class="flex-container">
+				<p>2016</p>
+				<div class="container flex-item">
+				  <div class="skills zes">$240.01</div>
+				</div>
+			</div>
+			<div class="flex-container">
+				<p>2017</p>
+				<div class="container flex-item">
+				<div class="skills zeven">$213.69</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="benzine container2">
+			<H2>How much fuel is left for Falcon 7</H2>
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="wel" src="welfuel.jpg">
+			<img class="niet" src="geenfuel.jpg">
+			<img class="niet" src="geenfuel.jpg">
+			<img class="niet" src="geenfuel.jpg">
+			<img class="niet" src="geenfuel.jpg">
+			<img class="niet" src="geenfuel.jpg">
+		</div>		
+		
+
+		<div id="container container3"></div>
+		<script type="text/javascript"> 	
+		Highcharts.chart('container', {
+			 title: {
+			    text: 'Afstand afgelegd per dag'
+			  },
+
+			  yAxis: {
+			    title: {
+			      text: 'Afstand in Km'
+			    }
+			  },
+			  legend: {
+			    layout: 'vertical',
+			    align: 'right',
+			    verticalAlign: 'middle'
+			  },
+
+			  plotOptions: {
+			    series: {
+			      label: {
+			        connectorAllowed: false
+			      },
+			      pointStart: 2010
+			    }
+			  },
+
+			  series: [{
+			    data: [43934, 52503, 57177, 69658, 97031, 119931, 137133, 154175]
+			
+			  }],
+
+			  responsive: {
+			    rules: [{
+			      condition: {
+			        maxWidth: 500
+			      },
+			      chartOptions: {
+			        legend: {
+			          layout: 'horizontal',
+			          align: 'center',
+			          verticalAlign: 'bottom'
+			        }
+			      }
+			    }]
+			  }
+
+			});
+	</script>
+	<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+        var data = google.visualization.arrayToDataTable([
+          ['Year', 'Afstand'],
+          ['2015',  1000],
+          ['2016',  1170],
+          ['2017',  960],
+          ['2018',  1030]
+        ]);
+
+        var options = {
+          title: 'Company Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart container4" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
+	</body>
+</html>
+
+	

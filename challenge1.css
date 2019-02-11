@@ -1,0 +1,132 @@
+/* Make sure that padding behaves as expected */
+body{
+	background-color: #181c1f;
+}
+@font-face {
+    font-family: "My Custom Font";
+    src: url(https://www.cufonfonts.com/font/brandon-grotesque-regular) format("truetype");
+}
+h1 {
+	color: white;
+	font-family: 'Arial', 'sans-serif';
+	margin-left: 10px;
+}
+h2 {
+	color: white;
+	font-family: 'Arial', 'sans-serif';
+}
+p {
+	font-family: 'Arial', 'sans-serif';
+	color: black;
+	margin-left: 10px;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	margin-bottom: 20px;
+}
+a {
+	color: #fff;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: border 0.2s ease;
+    font-size: 24px;
+}
+.nav{
+	background-color: #202729;
+}
+a:hover {
+    color: #3569a4;
+    text-decoration: none;
+}
+.wel {
+	width: 20%;
+	height: auto;
+}
+.niet {
+	width: 21%;
+	height: auto;
+	margin: 2px;
+}
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 600px; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+.flex-container{
+	display: flex;
+}
+.flex-item {
+	flex: 1;
+	margin: 10px;
+	text-align: center;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+}
+
+.drie {width: 79px; background-color: green; font-family: 'Arial', 'sans-serif';} /* Green */
+.vier {width: 300px; background-color: #3569a4; font-family: 'Arial', 'sans-serif';} /* Blue */
+.vijf {width: 439px; background-color: purple; font-family: 'Arial', 'sans-serif';} /* Red */
+.zes {width: 480px; background-color: #B22234; font-family: 'Arial', 'sans-serif';} /* Dark Grey */
+.zeven {width: 427px; background-color: #ccac55; font-family: 'Arial', 'sans-serif';} /* Dark Grey */
+
+#container {
+  min-width: 310px;
+  max-width: 800px;
+  height: 400px;
+  margin: 0 auto
+}
+.container1 {
+	background-color: white;
+}
+.container2 {
+	background-color: white;
+}
+.container3 {
+	background-color: white;
+}
+/*https://www.highcharts.com/demo/line-basic*/
+
+@media only screen and (min-width: 680px){
+	.wel {
+		width: 180px;
+		height: auto;
+	}
+	.niet {
+		width: 180px;
+		height: auto;
+	}
+	h2 {
+		font-size: 35px;
+		margin-left: 23%;
+	}
+}
+@media only screen and (min-width: 1000px){
+	.wel {
+		width: 150px;
+		height: auto;
+	}
+	.niet {
+		width: 150px;
+		height: auto;
+	}
+	h2{
+		font-size: 40px;
+	}
+}	
+@media only screen and (min-width: 1600px){ 
+	.wel {
+		width: 200px;
+		height: auto;
+	}
+	.niet {
+		width: 200px;
+		height: auto;
+	}
+}
