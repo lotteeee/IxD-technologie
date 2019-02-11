@@ -1,0 +1,27 @@
+/* Make sure that padding behaves as expected */
+* {box-sizing:border-box}
+
+/* Container for skill bars */
+.container {
+  width: 600px; /* Full width */
+  background-color: #ddd; /* Grey background */
+}
+.flex-container{
+	display: flex;
+}
+.flex-item {
+	flex: 1;
+	margin: 10px;
+}
+
+.skills {
+  text-align: right; /* Right-align text */
+  padding: 10px; /* Add some padding */
+  color: white; /* White text color */
+}
+
+.drie {width: 79px; background-color: #4CAF50;} /* Green */
+.vier {width: 300px; background-color: #2196F3;} /* Blue */
+.vijf {width: 439px; background-color: #f44336;} /* Red */
+.zes {width: 480px; background-color: #808080;} /* Dark Grey */
+.zeven {width: 427px; background-color: purple;} /* Dark Grey */
